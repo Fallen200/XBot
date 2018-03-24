@@ -149,7 +149,8 @@ switch (args[0].toLowerCase()) {
         message.channel.send("Please use this format! ```!Role-(Roles)```\nDo `!Roles` to view all the roles.")
         break;
     default:
-        message.channel.send(" Sorry , This command is wrong !")
+        message.channel.send(":x: Sorry , This command is wrong !
+")
 }
 
 });
