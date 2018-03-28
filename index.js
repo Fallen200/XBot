@@ -156,4 +156,4 @@ switch (args[0].toLowerCase()) {
 }
 
 });
-bot.login(TOKEN);
+bot.login(process.env.TOKEN);
