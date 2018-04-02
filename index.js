@@ -148,9 +148,24 @@ switch (args[0].toLowerCase()) {
             .addField("\nRoles", "CSGO\nPUBG\nMTA\nRoblox\nDota2\nMinecraft\nRush\nRocketLeauge\nH1Z1\nCrossfire\nFortnite\nLeagueOfLegends")
         message.channel.sendEmbed(embed);
     break;
+    case "vexnoid":
+        message.channel.send("Check your DMS!")
+        message.author.send("https://discord.gg/5j2wApC")
+        break;
     case "role":
         message.channel.send("Please use this format! ```!Role-(Roles)```\nDo `!Roles` to view all the roles.")
         break;
+    case "help":
+            var embed = new Discord.RichEmbed();
+            embed.setColor(0xFFD700);
+            embed.setTitle("Commmands")
+            embed.addField("Commands", "Role - Add a role\nRoles - List all the roles you may add\nVexNoid - Gives you the VexNoid Discord\nDmall - DMs everyone")
+            embed.setFooter("Made by VexNoid | Fallen#9211");
+
+            message.author.send(embed)
+            message.author.send()
+            message.channel.send("Check yo DM'S! :scream:")
+            break;
     default:
         message.channel.send("**Invalid Command! :red_circle:**")
 }
