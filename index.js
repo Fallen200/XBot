@@ -166,8 +166,6 @@ switch (args[0].toLowerCase()) {
             message.author.send()
             message.channel.send("Check yo DM'S! :scream:")
             break;
-    default:
-        message.channel.send("**Invalid Command! :red_circle:**")
 }
 
 });
